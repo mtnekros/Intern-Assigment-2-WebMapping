@@ -2,12 +2,12 @@
 <html>
 <head>
 	<title>Multilayered map of Nepal</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+  
 	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
   <script src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js"></script>
-  <script src="https://unpkg.com/@turf/turf@3.5.2/turf.min.js"></script>
-	<link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
   <section>
@@ -20,7 +20,8 @@
         <input type="checkbox" class="layerCheckBox" value="districts" unchecked>Districts<br>
         <input type="checkbox" class="layerCheckBox" value="provinces" checked>Provinces<br>
     </div>
-    <script type="text/javascript" src="js/mainMapAndToggling.js"></script>  
+    <script type="text/javascript" src="js/mainMapAndToggling.js"></script>
+    <script type="text/javascript" src="js/showHideGapaNapaAndDistrictOnClick.js"></script>
   </section>
 </body>
 </html>
